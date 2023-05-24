@@ -44,7 +44,7 @@ VALID_OPERATIONS = [
 ]
 
 # Defaults
-DEFAULT_INTERVAL = 30  # minutes
+DEFAULT_INTERVAL = 30  # seconds
 DEFAULT_AUTO_RESET = True
 # Services
 SERVICE_RESET = "reset"

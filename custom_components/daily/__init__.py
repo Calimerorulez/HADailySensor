@@ -140,7 +140,7 @@ class DailySensorUpdateCoordinator(DataUpdateCoordinator):
         self.platforms = []
         self.entry_setup_completed = False
 
-        SCAN_INTERVAL = timedelta(minutes=self.interval)
+        SCAN_INTERVAL = timedelta(seconds=self.interval)
         super().__init__(hass, _LOGGER, name=name, update_interval=SCAN_INTERVAL)
 
         # reset happens at midnight
