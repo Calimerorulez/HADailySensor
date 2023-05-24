@@ -4,19 +4,19 @@
     "step": {
       "user": {
         "title": "Daily Sensor",
-        "description": "Si necesitas ayuda con la configuración, por favor visita: https://github.com/jeroenterheerdt/HADailySensor",
+        "description": "Si necesitas ayuda con la configuración, por favor visita: https://github.com/Calimerorulez/HADailySensor",
         "data": {
           "name": "Nombre único de la instancia",
           "sensor": "Entidad que provee la entrada para el sensor diario",
           "operation": "Operación a aplicar al sensor",
           "unit_of_measurement": "Unidad de medida",
-          "interval": "Intervalo de refresco en minutos",
+          "interval": "Intervalo de refresco en secundos",
           "auto_reset": "Resetear automáticamente a las 00:00"
         }
       }
     },
     "error": {
-      "intervalnotvalid": "El intervalo especificado no es válido. Necesita ser >0 minutos.",
+      "intervalnotvalid": "El intervalo especificado no es válido. Necesita ser >0 secundos.",
       "name": "Especifica un nombre único para esta instancia.",
       "operationnotfound": "Especifica una operación soportada.",
       "sensornotfound": "Uno o más de los sensores especificados no existe.",
