@@ -3,9 +3,9 @@
 DOMAIN = "daily"
 NAME = "Daily Sensor"
 DOMAIN_DATA = f"{DOMAIN}_data"
-VERSION = "0.3.9"
+VERSION = "0.3.10"
 
-ISSUE_URL = "https://github.com/jeroenterheerdt/HADailySensor/issues"
+ISSUE_URL = "https://github.com/Calimerorulez/HADailySensor/issues"
 
 # Icons
 ICON = "mdi:timetable"
