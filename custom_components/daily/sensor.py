@@ -49,7 +49,7 @@ class DailySensor(DailySensorEntity):
         self._values = []
         self._occurrence = None
 
-    @asyncio.coroutine
+    # @asyncio.coroutine
     async def async_added_to_hass(self):
         """Complete the initialization."""
         await super().async_added_to_hass()
