@@ -87,7 +87,7 @@ class DailySensor(DailySensorEntity):
         self._state = None
         self._occurrence = None
         self._values = []
-        self.hass.add_job(self.async_update_ha_state)
+        self.hass.add_job(self.async_write_ha_state)
 
     @callback
     def _handle_update(self, event: Event):
@@ -140,7 +140,7 @@ class DailySensor(DailySensorEntity):
                         pass
                 if state_minmax_changed:
                     self._occurrence = datetime.now()
-                self.hass.add_job(self.async_update_ha_state)
+                self.hass.add_job(self.async_write_ha_state)
         except ValueError:
             _LOGGER.error(
                 "unable to convert to float. Please check the source sensor ({}) is available.".format(
